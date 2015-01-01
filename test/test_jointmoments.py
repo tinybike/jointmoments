@@ -5,39 +5,14 @@ Unit tests for jointmoments.
 
 """
 from __future__ import division
-try:
-    import sys
-    import cdecimal
-    sys.modules["decimal"] = cdecimal
-except:
-    pass
 import os
-import platform
-from decimal import Decimal, getcontext, ROUND_HALF_EVEN
 import numpy as np
-import pandas as pd
-import matplotlib
-import matplotlib.pyplot as plt
-from scipy import signal
-from sklearn.decomposition import FastICA, PCA
-if platform.python_version() < "2.7":
-    unittest = __import__("unittest2")
-else:
-    import unittest
 
 HERE = os.path.dirname(os.path.realpath(__file__))
 sys.path.insert(0, os.path.join(HERE, os.pardir))
 sys.path.insert(0, os.path.join(HERE, os.pardir, "jointmoments"))
 
 from jointmoments import *
-
-pd.set_option("display.max_rows", 25)
-pd.set_option("display.width", 1000)
-pd.options.display.mpl_style = "default"
-np.set_printoptions(linewidth=500)
-
-if matplotlib.is_interactive():
-    plt.ioff()
 
 tolerance = 1e-5
 
