@@ -6,6 +6,7 @@ Unit tests for jointmoments.
 """
 from __future__ import division
 import os
+import sys
 import numpy as np
 
 HERE = os.path.dirname(os.path.realpath(__file__))
