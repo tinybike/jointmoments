@@ -17,5 +17,5 @@ setup(
     download_url = "https://github.com/tensorjack/jointmoments/tarball/0.1",
     packages=["jointmoments"],
     install_requires=["numpy", "pandas", "six"],
-    keywords = ["moments", "joint", "mixed", "central", "centered", "tensors"]
+    keywords = ["moments", "joint", "mixed", "central", "centered", "cumulants", "tensors"]
 )
